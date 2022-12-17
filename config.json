@@ -1,0 +1,18 @@
+{
+  "dataset": {
+    "imdbPath": {
+      "posSentencesPath": "/dataset/imdb/imdb.pos",
+      "negSentencesPath": "/dataset/imdb/imdb.neg"
+    }
+  },
+  "modelTraining": {
+    "maxLen": 128,
+    "embeddingDim": 128,
+    "batchSize": 256,
+    "epoch": 1,
+    "lr": 1e-3
+  },
+    "modelsPath": {
+    "sentenceClassification": "/saved_models/"
+  }
+}
