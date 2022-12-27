@@ -14,3 +14,6 @@ class losses():
 
     def BCEWithLogitsLoss(self, reduction='mean'):
         return nn.BCEWithLogitsLoss(reduction=reduction)
+
+    def NLLLoss(self):
+        return nn.NLLLoss()

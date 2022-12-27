@@ -3,6 +3,11 @@
     "imdbPath": {
       "posSentencesPath": "/dataset/imdb/imdb.pos",
       "negSentencesPath": "/dataset/imdb/imdb.neg"
+    },
+    "ptbPath": {
+      "ptbTrain": "/dataset/ptb/ptb.train.txt",
+      "ptbValid": "/dataset/ptb/ptb.valid.txt",
+      "ptbTest": "/dataset/ptb/ptb.test.txt"
     }
   },
   "modelTraining": {
@@ -10,9 +15,13 @@
     "embeddingDim": 128,
     "batchSize": 256,
     "epoch": 1,
-    "lr": 1e-3
+    "lr": 1e-3,
+    "contextSize": 2,
+    "hiddenSize": 1,
+    "nGrams": 2
   },
     "modelsPath": {
-    "sentenceClassification": "/saved_models/"
+    "sentenceClassification": "/saved_models/",
+    "languageModels": "/saved_models/"
   }
 }

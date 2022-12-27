@@ -10,7 +10,7 @@ from data_processing.preprocessing import Preprocessing
 
 # reads the content of the file passed as an argument.
 # if limit > 0, this function will return only the first "limit" sentences in the file.
-def loadTexts(filename, limit=-1):
+def read_file_imdb(filename, limit=-1):
     dataset = []
     with open(filename) as f:
         line = f.readline()
@@ -31,3 +31,14 @@ def loadTexts(filename, limit=-1):
 
         print("Load ", cpt, " lines from ", filename, " / ", skip, " lines discarded")
     return dataset
+
+
+def read_file_ptb(path):
+    data = list()
+    with open(path) as inf:
+        for line in inf:
+            line = line.strip()
+            if len(line) == 0:
+                continue
+            data.append({"text": line.split()})
+    return data
