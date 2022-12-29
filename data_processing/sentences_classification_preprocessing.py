@@ -6,7 +6,6 @@
 @author: Echo
 """
 from sklearn.model_selection import train_test_split
-
 from config import config
 from data_processing.preprocessing import Preprocessing
 import numpy as np

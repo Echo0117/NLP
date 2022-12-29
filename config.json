@@ -8,6 +8,15 @@
       "ptbTrain": "/dataset/ptb/ptb.train.txt",
       "ptbValid": "/dataset/ptb/ptb.valid.txt",
       "ptbTest": "/dataset/ptb/ptb.test.txt"
+    },
+    "posEnFrPath": {
+      "posEnTrain": "/dataset/pos_en_fr/en_ewt-ud-train.conllu",
+      "posEnValid": "/dataset/pos_en_fr/en_ewt-ud-dev.conllu",
+      "posEnTest": "/dataset/pos_en_fr/en_ewt-ud-test.conllu",
+      "posEnPudTest": "/dataset/pos_en_fr/en_pud-ud-test.conllu",
+      "posEmbeddingFr": "/dataset/pos_en_fr/fasttext_fr",
+      "posEmbeddingEn": "/dataset/pos_en_fr/fasttext_en",
+      "posFrTest": "/dataset/pos_en_fr/fr_gsd-ud-test.conllu"
     }
   },
   "modelTraining": {
@@ -18,10 +27,12 @@
     "lr": 1e-3,
     "contextSize": 2,
     "hiddenSize": 1,
-    "nGrams": 2
+    "nGrams": 2,
+    "hiddenDim": 10
   },
     "modelsPath": {
     "sentenceClassification": "/saved_models/",
-    "languageModels": "/saved_models/"
+    "languageModels": "/saved_models/",
+    "posTagging": "/saved_models/"
   }
 }

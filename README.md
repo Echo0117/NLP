@@ -93,6 +93,7 @@ pip install -r requirements.txt
 
 - Sentence Classification
 - Language models
+- POS Tagging
 
 # Credits
 
